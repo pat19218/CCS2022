@@ -12,6 +12,7 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./adc_timer_uart.obj" \
 "./adc_timer_uart_startup_ccs.obj" \
+"./tm4c123gh6pm_startup_ccs.obj" \
 "./uartstdio.obj" \
 "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" \
 "../tm4c123gh6pm.cmd" \
@@ -157,8 +158,8 @@ Laboratorio11.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "adc_timer_uart.obj" "adc_timer_uart_startup_ccs.obj" "uartstdio.obj" 
-	-$(RM) "adc_timer_uart.d" "adc_timer_uart_startup_ccs.d" "uartstdio.d" 
+	-$(RM) "adc_timer_uart.obj" "adc_timer_uart_startup_ccs.obj" "tm4c123gh6pm_startup_ccs.obj" "uartstdio.obj" 
+	-$(RM) "adc_timer_uart.d" "adc_timer_uart_startup_ccs.d" "tm4c123gh6pm_startup_ccs.d" "uartstdio.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

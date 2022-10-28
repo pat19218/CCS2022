@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.0"?>
 
-<!-- Auto-generated from: C:\Users\isaac\OneDrive\Documentos\CCS2022\.metadata\.plugins\com.ti.ccstudio.builddefinitions.generator\native\MSP432_20.2.6.LTS.xml -->
+<!-- Auto-generated from: C:\Users\isaac\OneDrive\Documentos\CCS2022\.metadata\.plugins\com.ti.ccstudio.builddefinitions.generator\native\MSP432_20.2.7.LTS.xml -->
 
 <plugin>
 
@@ -3475,7 +3475,7 @@ NOTE: User can specify --retain='*(*)' to retain all the sections from all the i
 				tip="Aliases: --strict_compatibility&lt;BODY&gt;Strict compatibility checking"
 				category="com.ti.ccstudio.buildDefinitions.MSP432_20.2.cat.linkerID.LNKMISC"
 				resourceFilter="project"
-				applicabilityCalculator="com.ti.ccstudio.project.core.internal.options.DefaultOptionApplicabilityCalculator"
+				applicabilityCalculator="com.ti.ccstudio.project.core.internal.options.DeprecatedOptionApplicabilityCalculator"
 				command="--strict_compatibility"
 				valueType="enumerated">
 				<enumeratedOptionValue
@@ -3838,6 +3838,23 @@ NOTE: User can specify --retain='*(*)' to retain all the sections from all the i
 				defaultValue="false"
 				command="--boot"
 				valueType="boolean"/>
+			<option
+				id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.hex.BOOT_ALIGN_SECT"
+				name="Align boot table split blocks to section alignment (--boot_align_sect)"
+				tip="Aliases: --boot_align_sect&lt;BODY&gt;Align boot table split blocks to section alignment."
+				category="com.ti.ccstudio.buildDefinitions.MSP432_20.2.cat.hex.BOOT_TABLE"
+				resourceFilter="project"
+				defaultValue="false"
+				command="--boot_align_sect"
+				valueType="boolean"/>
+			<option
+				id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.hex.BOOT_BLOCK_SIZE"
+				name="Set block size for splitting of boot table records (--boot_block_size=size)"
+				tip="Aliases: --boot_block_size=size&lt;BODY&gt;Set block size for splitting of boot table records."
+				category="com.ti.ccstudio.buildDefinitions.MSP432_20.2.cat.hex.BOOT_TABLE"
+				resourceFilter="project"
+				command="--boot_block_size="
+				valueType="string"/>
 			<option
 				id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.hex.BOOTORG"
 				name="Specify origin address or symbol of boot table ROM (--bootorg, -bootorg=addr)"
@@ -4998,6 +5015,8 @@ NOTE: User can specify --retain='*(*)' to retain all the sections from all the i
 			<option command="--set_error_limit" tag="SET_ERROR_LIMIT"/>
 			<option command="--boot" tag="BOOT"/>
 			<option command="-boot" tag="BOOT"/>
+			<option command="--boot_align_sect" tag="BOOT_ALIGN_SECT"/>
+			<option command="--boot_block_size" tag="BOOT_BLOCK_SIZE"/>
 			<option command="--bootorg" tag="BOOTORG"/>
 			<option command="-bootorg" tag="BOOTORG"/>
 			<option command="--gpio16" tag="GPIO16"/>
@@ -5148,6 +5167,7 @@ NOTE: User can specify --retain='*(*)' to retain all the sections from all the i
 		<option id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.linkerID.BUFFER_DIAGNOSTICS" hide="true"><deprecate severity="3"/></option>
 		<option id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.linkerID.DIAG_WRAP" hide="true"><deprecate severity="3"/></option>
 		<option id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.linkerID.GENERATE_DEAD_FUNCS_LIST" hide="true"><deprecate severity="3"/></option>
+		<option id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.linkerID.STRICT_COMPATIBILITY" hide="true"><deprecate severity="3" diagnostic="The --strict_compatibility option is no longer necessary, and will be removed in a subsequent release."/></option>
 		<option id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.hex.ARRAY" hide="true"><deprecate severity="3" diagnostic="--array has been moved into the 'Output format' drop-down list - please make your selection there."/></option>
 		<option id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.hex.BINARY" hide="true"><deprecate severity="3" diagnostic="--binary has been moved into the 'Output format' drop-down list - please make your selection there."/></option>
 		<enumeratedOptionValue id="com.ti.ccstudio.buildDefinitions.MSP432_20.2.hex.OBJECT_FORMAT.HOST_IMAGE"><deprecate severity="3" diagnostic="--host_image is deprecated and will be removed in a subsequent release."/></enumeratedOptionValue>

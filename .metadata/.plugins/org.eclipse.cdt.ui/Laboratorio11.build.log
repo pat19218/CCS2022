@@ -3,6 +3,23 @@
 
 "C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
  
-gmake[1]: 'Laboratorio11.out' is up to date.
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/isaac/OneDrive/Documentos/CCS2022/Laboratorio11" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building target: "Laboratorio11.out"
+Invoking: Arm Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Laboratorio11.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Laboratorio11_linkInfo.xml" --rom_model -o "Laboratorio11.out" "./adc_timer_uart.obj" "./adc_timer_uart_startup_ccs.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+error #10056: symbol "ResetISR" redefined: first defined in "./adc_timer_uart_startup_ccs.obj"; redefined in "./tm4c123gh6pm_startup_ccs.obj"
+error #10056: symbol "g_pfnVectors" redefined: first defined in "./adc_timer_uart_startup_ccs.obj"; redefined in "./tm4c123gh6pm_startup_ccs.obj"
+error #10010: errors encountered during linking; "Laboratorio11.out" not built
+ 
+>> Compilation failure
+makefile:145: recipe for target 'Laboratorio11.out' failed
+gmake[1]: *** [Laboratorio11.out] Error 1
+makefile:141: recipe for target 'all' failed
+gmake: *** [all] Error 2
 
 **** Build Finished ****
