@@ -2015,3 +2015,29 @@ Finished building target: "Sis_Control1_lab7.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Sis_Control1_lab7 ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/isaac/OneDrive/Documentos/CCS2022/Sis_Control1_lab7" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "Sis_Control1_lab7.out"
+Invoking: Arm Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Sis_Control1_lab7.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Sis_Control1_lab7_linkInfo.xml" --rom_model -o "Sis_Control1_lab7.out" "./main.obj" "./timer_spi_master_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Sis_Control1_lab7.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sis_Control1_lab7 ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'Sis_Control1_lab7.out' is up to date.
+
+**** Build Finished ****
